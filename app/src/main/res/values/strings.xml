@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">storedata</string>
+    <string name="username">USERNAME</string>
+    <string name="password">PASSWORD</string>
+    <string name="login">LOGIN</string>
+    <string name="signUp">SIGNUP</string>
+    <string name="username_text">Username</string>
+    <string name="email">Email</string>
+    <string name="passwordtxt">Password</string>
+    <string name="signIn">SIGN IN</string>
+    <string name="notePad">Notepad</string>
+    <string name="title">Title</string>
+    <string name="date">Date</string>
+    <string name="loading_text">loading..</string>
+    <string name="createNote">Create note</string>
+    <string name="createCheckList">Create checklist</string>
+    <string name="shareItem">Share Item</string>
+    <string name="share">Share</string>
+
+    <string name="deleteItem">Delete Item</string>
+    <string name="backUpdata">Backup All Data</string>
+    <string name="restoreData">Restore Your Data</string>
+    <string name="settings">Settings</string>
+    <string name="exportNote">Export this note</string>
+    <string name="termsAndCon">Terms &amp; Conditions</string>
+    <string name="appid">ca-app-pub-7366254775484556~8072748480</string>
+    <string name="bannerid">ca-app-pub-7366254775484556/7224084136</string>
+    <string name="Interstitial">ca-app-pub-7366254775484556/9089336745</string>
+    <string name="rewarded">ca-app-pub-7366254775484556/5607997555</string>
+    <string name="noInternetConnection">No internet Connection</string>
+    <string name="pleaseConnectInternet">Please turn on internet connection to continue</string>
+    <string name="titleShouldNotEmpty">Document title shouldn\'t be empty</string>
+    <string name="version">App Version</string>
+    <string name="logout">Logout</string>
+    <string name="referYourFrd">Refer Your Friend</string>
+    <string name="reportIssue">Report Issue</string>
+    <string name="editPass">Edit Profile</string>
+    <string name="newPass">New Password</string>
+    <string name="conPass">Conform Password</string>
+
+</resources>

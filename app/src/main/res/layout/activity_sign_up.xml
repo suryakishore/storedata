@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgcolor"
+    tools:context="com.storedata.com.signup.SignUpActivity">
+    <!--Heading tool bar-->
+    <android.support.v7.widget.Toolbar
+        android:background="@color/colorBlack"
+        android:id="@+id/top_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentInsetLeft="0dp"
+        android:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:contentInsetRight="0dp"
+        android:contentInsetEnd="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp"
+        android:elevation="3dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize">
+            <RelativeLayout
+                android:background="?android:selectableItemBackground"
+                android:clickable="true"
+                android:id="@+id/back_button"
+                android:layout_width="@dimen/app_action_bar_size"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/dim_10"
+                    android:background="@drawable/back_arrow_icon_selector"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/page_title"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:textSize="19sp"
+                android:text="@string/signIn"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:hint="@string/username_text"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite70"
+        android:textSize="15sp" />
+    <ProgressBar
+        android:id="@+id/validating_name_progressbar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/circule_white_progressbar"
+        android:visibility="gone" />
+        <ImageView
+            android:id="@+id/name_already_exist_aleret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:tint="@color/colorWhite"
+            app:srcCompat="@drawable/ic_error_outline_black_24dp" />
+
+        <ImageView
+            android:id="@+id/username_tickmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:padding="10dp"
+            android:layout_marginEnd="@dimen/dim_10"
+            android:layout_marginRight="@dimen/dim_10"
+            android:visibility="gone"
+            android:tint="@color/colorWhite"
+            app:srcCompat="@drawable/tick_mark_icon" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="true"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite70"
+            android:textSize="15sp" />
+
+        <ProgressBar
+            android:id="@+id/validating_email_progressbar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/circule_white_progressbar"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/email_already_exist_aleret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:tint="@color/colorWhite"
+            app:srcCompat="@drawable/ic_error_outline_black_24dp" />
+        <ImageView
+            android:id="@+id/email_tick_mark_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:padding="10dp"
+            android:layout_marginRight="@dimen/dim_10"
+            android:layout_marginEnd="@dimen/dim_10"
+            android:tint="@color/colorWhite"
+            android:visibility="gone"
+            app:srcCompat="@drawable/tick_mark_icon" />
+
+        <ImageView
+            android:id="@+id/email_name_cross_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:padding="10dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/photo_cross_icon_off" />
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:hint="@string/passwordtxt"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite70"
+        android:textSize="15sp"
+        />
+    <Button
+        android:id="@+id/signInBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dim_20"
+        android:text="@string/signIn"
+        android:enabled="false"
+        android:textStyle="bold"
+        android:textSize="@dimen/dim_15"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/button_login_in_active_bag"
+        />
+   </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        />
+
+
+</LinearLayout>

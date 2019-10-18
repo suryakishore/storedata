@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+<!--
+    <color name="colorAccent">#FF4081</color>
+-->
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorWhite40">#21ffffff</color>
+    <color name="transparent_color">#00ffffff</color>
+    <color name="colorWhite60">#5fffffff</color>
+    <color name="colorWhite70">#77ffffff</color>
+    <color name="colorWhite80">#c4ffffff</color>
+    <color name="colorWhite45">#2bffffff</color>
+    <color name="colorWhite50">#80ffffff</color>
+    <color name="colorWhite30">#4Dffffff</color>
+    <color name="colorWhite10">#25ffffff</color>
+    <color name="colorLightGray">#fafafa</color>
+    <color name="colorLightGray40">#e9e8e8</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlack50">#84000000</color>
+    <color name="colorBlack05">#07bcbbbb</color>
+    <color name="colorBlack30">#60000000</color>
+    <color name="colorBlack60">#9D000000</color>
+    <color name="facebook_blue_color">#4090db</color>
+    <color name="sky_blue_color">#3897F0</color>
+    <color name="light_gray">#f4f4f4</color>
+    <color name="Action_bar_title">#d2d2d2</color>
+    <color name="guideline">#4DFFFFFF</color>
+    <color name="botom_tab_bg">#fcfcfb</color>
+    <color name="status_bar_color">#f1f1f1</color>
+    <color name="bgcolor">#3C3C3C</color>
+
+
+    <!--Progress bar color-->
+    <color name="colorSilverGray">#C0C0C0</color>
+    <color name="colorBlack40">#7e000000</color>
+    <color name="colorone">#f27649c1</color>
+    <color name="colortwo">#ec1de2</color>
+    <color name="colorthree">#c01574</color>
+    <color name="colorfour">#fb4809</color>
+    <color name="transparentblack">#4f000000</color>
+    <color name="background">#4f000000</color>
+
+    <!--Dot progress bar color-->
+    <color name="light_blue_A700">#0091EA</color>
+    <color name="light_blue_A400">#00B0FF</color>
+    <color name="lightest_blue_A400">#d791d6f4</color>
+
+
+    <color name="colorBlack80">#C6000000</color>
+
+    <color name="blue_light">#68b0f4</color>
+    <color name="blue_lighter">#FF94C7F7</color>
+    <color name="blue_lightest">#bedcf9</color>
+    <color name="blue">#FF3399FF</color>
+
+    <!--Dot progress bar color-->
+    <color name="lighter_blue">#FF2C86C0</color>
+    <color name="light_blue">#FF2670C0</color>
+    <color name="dark_blue">#FF006CB1</color>
+
+    <color name="app_back_ground">#f4f4f4</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="gray_lightest">#f4f4f4</color>
+    <color name="gray_lighter">#FFE7E6E6</color>
+    <color name="metalic_gray">#FFDADADA</color>
+    <color name="gray">#ffbbbbbb</color>
+    <color name="gray_text">#FFadadad</color>
+    <color name="gray_text_darker">#969595</color>
+    <color name="gray_darker">#FF6D6D6D</color>
+    <color name="gray_darkest">#ff555555</color>
+
+    <color name="pink">#FFDF2D69</color>
+    <color name="pink_dark">#c71652</color>
+    <color name="pink_light">#FFF16A97</color>
+
+    <color name="black_carbon">#99000000</color>
+    <color name="black_overlay">#66000000</color>
+
+    <!--Feed item colors-->
+    <color name="colorCommentBackground">#FAFAFA</color>
+    <color name="colorUsernameText">#282828</color>
+    <color name="colorCaptionText">#282828</color>
+    <color name="colorSeeMore">#cccccc</color>
+    <color name="colorHashtag">#046999</color>
+    <color name="colorHashtagDark">#01579b</color>
+    <color name="colorHighlightComment">#b3e5fc</color>
+    <color name="colorViewAllComments">#919191</color>
+
+    <!-- SHARE TO FRAG -->
+    <color name="common_background_color">#c9cbcc</color>
+    <color name="share_to_txt_color">#282828</color>
+    <color name="share_to_social_color">#4b4f54</color>
+    <color name="unselected_text_color">#9b9b9b</color>
+    <!--HOME FRAGMENT-->
+    <color name="parrot_green">#FF24FF00</color>
+    <color name="parrot_green30">#3a24ff00</color>
+    <color name="lite_green">#29cd0d</color>
+    <color name="lite_green30">#5b29cd0d</color>
+    <!--  <color name="green">#FF00A651</color>-->
+    <color name="green">#FF31B570</color>
+    <color name="dark_green">#FF07A60E</color>
+    <color name="dark_red">#E91E09</color>
+    <!--<color name="ligh_red">#FFED1C24</color>-->
+    <color name="ligh_red">#EC4449</color>
+    <color name="yellow">#f8f7eb04</color>
+    <color name="balck282828">#282828</color>
+    <color name="regularTextColora5a7aa">#a5a7aa</color>
+
+    <!--Feed item text color text-->
+    <color name="post_on_text_color">#a2a2a2</color>
+    <color name="view_all_comnt">#999999</color>
+    <color name="mention_name_color">#09529b</color>
+    <color name="normal_text">#262626</color>
+    <color name="normal_text80">#464444</color>
+
+    <color name="register_color1">#1e6474</color>
+    <color name="register_color2">#3AA28D</color>
+
+    <color name="calls_color">#268a99</color>
+    <color name="ripple_dark_grey">#BDBDBD</color>
+    <color name="ripple_light_grey">#EEEEEE</color>
+    <color name="color_image_download">#88000000</color>
+    <color name="chat_date">#757575</color>
+    <color name="color_background_gray">#f5f5f5</color>
+    <color name="image_not_gray">#9E9E9E</color>
+    <color name="color_text_black">#222222</color>
+    <color name="heart">#F44336</color>
+    <color name="color_line_gray">#e5e5e5</color>
+    <color name="color_tab_indicator">#808080</color>
+    <color name="whiteOverlay">#AFffffff</color>
+    <color name="post_username">#262626</color>
+    <color name="post_hash">#02376a</color>
+    <color name="chat_write">#c7c7c7</color>
+    <color name="direct_message">#999999</color>
+    <color name="chat_seperator">#c9cbcd</color>
+    <color name="snake_bar_bg">#f1363c</color>
+
+
+</resources>

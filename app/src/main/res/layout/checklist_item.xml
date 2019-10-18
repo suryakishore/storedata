@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+    <EditText
+        android:id="@+id/addtoDo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/dim_10"
+        android:layout_marginLeft="@dimen/dim_10"
+        android:layout_marginRight="@dimen/dim_10"
+        android:layout_marginStart="@dimen/dim_10"
+        android:layout_toLeftOf="@+id/saveTodo"
+        android:layout_toStartOf="@+id/saveTodo"
+        android:background="@color/transparent"
+        android:singleLine="true"
+        android:textColor="@color/colorWhite"
+        android:textColorHighlight="@color/colorWhite50"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/dim_15_dp"
+        />
+
+    <ImageView
+        android:id="@+id/crossTodo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/dim_10"
+        android:layout_marginRight="@dimen/dim_10"
+        app:srcCompat="@drawable/ic_cancel" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/addtoDo"
+        android:layout_marginTop="@dimen/dim_20"
+        android:background="@color/colorWhite50" />
+</RelativeLayout>

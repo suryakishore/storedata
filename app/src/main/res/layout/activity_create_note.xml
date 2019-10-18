@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical"
+    tools:context="com.storedata.com.createnote.CreateNoteActivity">
+    <!--Heading tool bar-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/top_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgcolor"
+        android:contentInsetEnd="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetRight="0dp"
+        android:contentInsetStart="0dp"
+        android:elevation="3dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize">
+
+            <RelativeLayout
+                android:id="@+id/back_button"
+                android:layout_width="@dimen/app_action_bar_size"
+                android:layout_height="match_parent"
+                android:background="?android:selectableItemBackground"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/dim_10"
+                    android:background="@drawable/ic_survey"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/page_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_toEndOf="@+id/back_button"
+                android:layout_toRightOf="@+id/back_button"
+                android:gravity="center_vertical"
+                android:text="@string/notePad"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:textSize="19sp" />
+
+            <RelativeLayout
+                android:id="@+id/option_menu"
+                android:layout_width="@dimen/app_action_bar_size"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@drawable/option_menu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/save"
+                android:layout_width="@dimen/app_action_bar_size"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/delete"
+                android:layout_toStartOf="@+id/delete"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:tint="@color/colorWhite"
+                    app:srcCompat="@drawable/ic_save" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/delete"
+                android:layout_width="@dimen/app_action_bar_size"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/option_menu"
+                android:layout_toStartOf="@+id/option_menu"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:tint="@color/colorWhite"
+                    app:srcCompat="@drawable/ic_delete_button" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_section"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dim_20"
+            android:paddingTop="@dimen/dim_20">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/date"
+                android:layout_toStartOf="@+id/date"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim_10"
+                    android:layout_marginStart="@dimen/dim_10"
+                    android:text="Title :"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/dim_20" />
+
+                <EditText
+                    android:id="@+id/notepadTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim_10"
+                    android:layout_marginStart="@dimen/dim_10"
+                    android:layout_toEndOf="@+id/title"
+                    android:layout_toRightOf="@+id/title"
+                    android:background="@color/transparent"
+                    android:hint="No Title"
+                    android:singleLine="true"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHighlight="@color/colorWhite50"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dim_10"
+                android:layout_marginRight="@dimen/dim_10"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/dim_20"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_1"
+            android:background="@color/colorWhite" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_1"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorWhite" />
+
+        <EditText
+            android:id="@+id/notepadData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dim_10"
+            android:layout_marginLeft="@dimen/dim_10"
+            android:layout_marginRight="@dimen/dim_10"
+            android:layout_marginStart="@dimen/dim_10"
+            android:layout_marginTop="@dimen/dim_10"
+            android:background="@color/transparent"
+            android:hint="Try to enter some note"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite50"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

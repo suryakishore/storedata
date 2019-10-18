@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="custom_abar_height">45dp</dimen>
+    <dimen name="app_action_bar_size">50dp</dimen>
+    <dimen name="dim_10">10dp</dimen>
+    <dimen name="dim_1">1dp</dimen>
+    <dimen name="dim_28">28dp</dimen>
+    <dimen name="dim_16">16dp</dimen>
+    <dimen name="dim_20">20dp</dimen>
+    <dimen name="dim_46">46dp</dimen>
+    <dimen name="dim_2">2dp</dimen>
+    <dimen name="dim_15">15sp</dimen>
+    <dimen name="dim_15_dp">15dp</dimen>
+
+
+</resources>

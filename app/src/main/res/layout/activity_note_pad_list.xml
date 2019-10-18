@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical"
+    tools:context="com.storedata.com.notepad.NotePadListActivity">
+    <!--Heading tool bar-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/top_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgcolor"
+        android:contentInsetEnd="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetRight="0dp"
+        android:contentInsetStart="0dp"
+        android:elevation="3dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize">
+
+            <RelativeLayout
+                android:id="@+id/back_button"
+                android:layout_width="@dimen/app_action_bar_size"
+                android:layout_height="match_parent"
+                android:background="?android:selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/dim_10"
+                    android:background="@drawable/ic_survey"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/searchrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/back_button"
+                android:layout_toLeftOf="@+id/option_menu"
+                android:layout_toRightOf="@+id/back_button"
+                android:layout_toStartOf="@+id/option_menu"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/search_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/search" />
+
+                    <EditText
+                        android:id="@+id/search_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/colorSilverGray"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/cross_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:clickable="true"
+                        android:padding="10dp"
+                        android:tint="@color/colorWhite"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/photo_cross_icon_off" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/page_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_toEndOf="@+id/back_button"
+                android:layout_toRightOf="@+id/back_button"
+                android:gravity="center_vertical"
+                android:text="@string/notePad"
+                android:textColor="@color/colorWhite"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/option_menu"
+                android:layout_width="@dimen/app_action_bar_size"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@drawable/option_menu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/search"
+                android:layout_width="@dimen/app_action_bar_size"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/option_menu"
+                android:layout_toStartOf="@+id/option_menu"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@drawable/search" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/createNotePad"
+        android:layout_below="@+id/top_section"
+        android:layout_marginBottom="@dimen/dim_10"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dim_20"
+            android:paddingTop="@dimen/dim_20">
+
+
+            <LinearLayout
+                android:id="@+id/titleLl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim_10"
+                    android:layout_marginStart="@dimen/dim_10"
+                    android:text="@string/title"
+                    android:textStyle="normal"
+
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/dim_20" />
+
+                <ImageView
+                    android:id="@+id/title_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:tint="@color/colorWhite"
+                    app:srcCompat="@drawable/ic_up_down_arrow"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/username"
+                    android:textColor="@color/colorfour"
+                    android:textSize="@dimen/dim_15_dp"
+                    android:textStyle="bold"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/userNametxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/colorfour"
+                    android:textSize="@dimen/dim_15_dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/dateLl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="@dimen/dim_10"
+                android:layout_marginRight="@dimen/dim_10"
+                android:layout_centerVertical="true"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/dim_20" />
+
+                <ImageView
+                    android:id="@+id/date_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:tint="@color/colorWhite"
+                    app:srcCompat="@drawable/ic_up_down_arrow"
+
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_1"
+            android:background="@color/colorWhite" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_1"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorWhite" />
+           <android.support.v4.widget.SwipeRefreshLayout
+               android:id="@+id/refresh"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvNotePadList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dim_20" />
+           </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/createNotePad"
+        android:layout_width="@dimen/app_action_bar_size"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bannerad"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:tint="@color/colorWhite"
+            app:srcCompat="@drawable/ic_notepad" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bannerad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true">
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/bannerid">
+
+        </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/loading_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/loading_progress_bar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:indeterminate="true"
+                android:indeterminateDrawable="@drawable/search_gray_circule_progress_bar" />
+
+            <TextView
+                android:id="@+id/loading_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/loading_text"
+                android:textColor="@color/colorWhite80"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/data_not_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/no_post_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/ic_survey"
+
+            />
+
+
+        <TextView
+            android:id="@+id/user_msg_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="No Notes to show\nCreatenote by clicking below"
+            android:textColor="@color/colorWhite"
+            android:textSize="19sp"
+            android:textStyle="normal"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

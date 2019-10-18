@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/backupdata"
+        android:title="@string/backUpdata"/>
+    <item
+        android:id="@+id/restoreData"
+        android:title="@string/restoreData"/>
+
+    <item
+        android:id="@+id/settings"
+        android:title="@string/settings"/>
+
+</menu>

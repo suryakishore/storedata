@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notePadItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dim_10"
+    android:paddingTop="@dimen/dim_10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dim_10"
+            android:layout_marginStart="@dimen/dim_10"
+            android:layout_toLeftOf="@+id/date"
+            android:layout_toStartOf="@+id/date"
+            android:gravity="center_vertical"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dim_10"
+            android:layout_marginRight="@dimen/dim_10"
+            android:drawableEnd="@drawable/option_menu"
+            android:drawablePadding="@dimen/dim_10"
+            android:drawableRight="@drawable/option_menu"
+            android:drawableTint="@color/colorWhite"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="@dimen/dim_10"
+        android:background="@color/colorWhite50" />
+</LinearLayout>
